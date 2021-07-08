@@ -1,0 +1,72 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: EEEEEE;
+}
+
+a{
+    text-decoration: none;
+    color: #7C47BF;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo{
+    width: 23%;
+    padding: 1%;
+    /* text-align: center; */
+}
+
+.logo img{
+    height: 70px;
+    margin: 10px;
+}
+
+nav{
+    padding: 1%;
+}
+
+nav ul{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li{
+    padding: 15px;
+}
+
+.hero{
+    height: 600px;
+    padding: 25px;
+}
+
+.content h1{
+    font-size: 54px;
+}
+
+footer{
+    background-color: EEEEEE;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul{
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer ul li{
+    text-align: center;
+    padding: 15px;
+}
