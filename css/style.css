@@ -47,7 +47,7 @@ nav ul li{
 }
 
 .hero{
-    height: 600px;
+    height: 400px;
     padding: 25px;
 }
 
@@ -71,3 +71,52 @@ footer ul li{
     text-align: center;
     padding: 15px;
 }
+
+.projects{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project{
+    display: grid;
+    /* grid-template-rows: 50px 50px 400px; */
+    grid-template-areas: 
+    "image title"
+    "image desc"
+    "image link"; 
+    width: 1200px;
+}
+
+.project img{
+    margin: 20px;
+    width: 700px;
+    grid-area: image;
+}
+
+.project-title{
+    margin: 20px;
+    grid-area: title;
+}
+
+.project-desc{
+    margin: 20px;
+    grid-area: desc;
+}
+
+.project-link{
+    margin: 20px;
+    grid-area: link;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .project{
+        grid-template-areas: 
+        "image"
+        "title"
+        "desc"
+        "link"; 
+        width: 600px;
+    }
+  }
